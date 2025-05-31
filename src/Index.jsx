@@ -9,6 +9,9 @@ import sec3img3 from "./Images/Sec-3-img3.jpg"
 import sec3img4 from "./Images/Sec-3-img4.jpg"
 import sec3img5 from "./Images/Sec-3-img5.jpg"
 import team1 from "./Images/team1.jpg" 
+import team2 from "./Images/team2.jpg" 
+import team3 from "./Images/team3.jpg" 
+import team4 from "./Images/team4.jpg" 
 import './index.css'
 
 let Index=()=>{
@@ -189,9 +192,9 @@ let Index=()=>{
 
       <div className="team-members">
         <img src={team1} alt="" />
-        <img src="/images/member2.jpg" alt="Team Member" />
-        <img src="/images/member3.jpg" alt="Team Member" />
-        <img src="/images/member4.jpg" alt="Team Member" />
+        <img src={team2} alt="" />
+        <img src={team3} alt="" />
+        <img src={team4} alt="" />
       </div>
 
       <div className="features">
