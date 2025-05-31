@@ -8,7 +8,9 @@ import sec3img2 from "./Images/Sec-3-img2.jpg"
 import sec3img3 from "./Images/Sec-3-img3.jpg"
 import sec3img4 from "./Images/Sec-3-img4.jpg"
 import sec3img5 from "./Images/Sec-3-img5.jpg"
+import team1 from "./Images/team1.jpg" 
 import './index.css'
+
 let Index=()=>{
     return(
         <>
@@ -186,7 +188,7 @@ let Index=()=>{
       </div>
 
       <div className="team-members">
-        <img src="/images/member1.jpg" alt="Team Member" />
+        <img src={team1} alt="" />
         <img src="/images/member2.jpg" alt="Team Member" />
         <img src="/images/member3.jpg" alt="Team Member" />
         <img src="/images/member4.jpg" alt="Team Member" />
@@ -194,17 +196,14 @@ let Index=()=>{
 
       <div className="features">
         <div className="feature-card fast-delivery">
-          <i className="icon">🚗</i>
           <h4>FAST DELIVERY</h4>
           <p>All over the world</p>
         </div>
         <div className="feature-card money-back">
-          <i className="icon">🔄</i>
           <h4>100% MONEY BACK</h4>
           <p>Within 14 days</p>
         </div>
         <div className="feature-card secure-payment">
-          <i className="icon">🔒</i>
           <h4>SECURE PAYMENT</h4>
           <p>Mastercard/Visa/Paypal</p>
         </div>
