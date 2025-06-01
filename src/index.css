@@ -516,15 +516,18 @@
 }
 
 .fast-delivery {
-  background: url('./Images/teamdelivery.jpg') cover no-repeat center;
+  background: url('./Images/teamdelivery.jpg') no-repeat center;
+  background-size: cover;
 }
 
 .money-back {
-  background: url('./Images/teammoney.jpg') cover no-repeat center;
+  background: url('./Images/teammoney.jpg') no-repeat center;
+  background-size: cover;
 }
 
 .secure-payment {
-  background: url('./Images/teamsecure.jpg') cover no-repeat center ;
+  background: url('./Images/teamsecure.jpg') no-repeat center;
+  background-size: cover;
 }
 
 .feature-card h4 {
