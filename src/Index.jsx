@@ -260,11 +260,11 @@ let Index=()=>{
         <div className="footer-column">
           <h3>QUICK LINKS</h3>
           <ul className="footer-links">
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">What We Do</a></li>
-            <li><a href="#">Meet The Team</a></li>
-            <li><a href="#">FAQ Page</a></li>
-            <li><a href="#">Contact Us</a></li>
+            <li><a href="">About Us</a></li>
+            <li><a href="">What We Do</a></li>
+            <li><a href="">Meet The Team</a></li>
+            <li><a href="">FAQ Page</a></li>
+            <li><a href="">Contact Us</a></li>
           </ul>
         </div>
 
@@ -277,10 +277,10 @@ let Index=()=>{
             <li><MdAddCall /> +321856964108</li>
           </ul>
           <div className="social-icons">
-            <div className="social-icons-insta"><FaInstagram /></div>
-            <div className="social-icons-insta"><FaSquareXTwitter /> </div>
-           <div className="social-icons-insta"> <FaFacebookF /> </div>
-           <div className="social-icons-insta"> <FaSnapchat /> </div>
+            <div><FaInstagram /></div>
+            <div><FaSquareXTwitter /> </div>
+           <div> <FaFacebookF /> </div>
+           <div> <FaSnapchat /> </div>
           </div>
         </div>
 
