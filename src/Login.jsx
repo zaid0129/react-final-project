@@ -30,7 +30,7 @@ let Login =()=>{
 
         {/* Right section - image */}
         <div className="login-image">
-          <img src={loginImage} alt="Decor" />
+          <img src="" alt="Decor" />
         </div>
       </div>
     </div>
