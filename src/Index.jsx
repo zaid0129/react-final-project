@@ -13,6 +13,12 @@ import team2 from "./Images/team2.jpg"
 import team3 from "./Images/team3.jpg" 
 import team4 from "./Images/team4.jpg" 
 import paypal from "./Images/foot-paypal.png"
+import { GrLocationPin } from "react-icons/gr";
+import { MdAddCall } from "react-icons/md";
+import { FaInstagram } from "react-icons/fa6";
+import { FaSquareXTwitter } from "react-icons/fa6";
+import { FaFacebookF } from "react-icons/fa";
+import { FaSnapchat } from "react-icons/fa";
 import './index.css'
 
 let Index=()=>{
@@ -266,15 +272,15 @@ let Index=()=>{
         <div className="footer-column">
           <h3>FIND A STORE</h3>
           <ul className="contact-info">
-            <li>📍 Hemlock, Brooklyn, NY 11208</li>
-            <li>📍 5 Bridge, Brooklyn, NY 11201</li>
-            <li>📞 +321856964108</li>
+            <li><GrLocationPin /> Hemlock, Brooklyn, NY 11208</li>
+            <li><GrLocationPin /> 5 Bridge, Brooklyn, NY 11201</li>
+            <li><MdAddCall /> +321856964108</li>
           </ul>
           <div className="social-icons">
-            <span>📷</span>
-            <span>🐦</span>
-            <span>📘</span>
-            <span>📡</span>
+            <FaInstagram />
+            <FaSquareXTwitter />
+            <FaFacebookF />
+            <FaSnapchat />
           </div>
         </div>
 

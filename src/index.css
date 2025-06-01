@@ -695,6 +695,10 @@
   color: #666666 ;
 }
 
+.footer-column h3 {
+  font-size: 22px;
+}
+
 .logo {
   color: #d0844e;
   font-size: 24px;
@@ -719,7 +723,7 @@
   color: rgb(96, 88, 88);
   display: inline-block;
   margin-bottom: 10px;
-  background-color: #e09d6d;
+  background-color: #d0844e;
   padding: 4px 8px;
   text-decoration: none;
 }
@@ -731,10 +735,11 @@
   margin-bottom: 10px;
 }
 
-.social-icons span {
+.social-icons  {
   font-size: 18px;
   margin-right: 10px;
   color: #aaa;
+  
 }
 
 .insta-gallery {
