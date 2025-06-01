@@ -456,7 +456,7 @@
 }
 
 .team-header {
-  background-color: #007f80;
+  background: url('./Images/teaamback.jpg');
   padding: 40px 20px;
   color: #fff;
   position: relative;
@@ -581,10 +581,8 @@
 
 
 .newsletter-section {
-  background-image: url('./Images/img2.jpg.jpg'); 
+  background: url('./Images/newsletterback.jpg') no-repeat center; 
   background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
   padding: 50px 20px;
   color: white;
 }
