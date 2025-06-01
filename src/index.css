@@ -643,7 +643,7 @@
   background-color: #f2f2f2;
 }
 
-/* Media Queries */
+/* MEDIA QUERY */
 @media (max-width: 768px) {
   .newsletter-content {
     flex-direction: column;
@@ -665,6 +665,125 @@
     width: 90%;
   }
 }
+
+
+/* -------------------------------------------------------------------------------------------------------------- */
+
+/* SEVENTH SECTION  */
+
+.footer {
+  background-color: #2a2a2a;
+  color: #ccc;
+  padding: 40px 20px;
+  font-family: 'Georgia', serif;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-column {
+  flex: 1 1 200px;
+  margin: 20px;
+}
+
+.footer-column p {
+  color: #666666 ;
+}
+
+.logo {
+  color: #d0844e;
+  font-size: 24px;
+}
+
+.logo-icon {
+  margin-left: 10px;
+}
+
+.payment-icons img {
+  height: 25px;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li a {
+  color: rgb(96, 88, 88);
+  display: inline-block;
+  margin-bottom: 10px;
+  background-color: #e09d6d;
+  padding: 4px 8px;
+  text-decoration: none;
+}
+
+.contact-info {
+  list-style: none;
+  padding: 0;
+  color: #666666;
+  margin-bottom: 10px;
+}
+
+.social-icons span {
+  font-size: 18px;
+  margin-right: 10px;
+  color: #aaa;
+}
+
+.insta-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 60px);
+  gap: 5px;
+  margin-top: 10px;
+}
+
+.insta-gallery img {
+  width: 100%;
+  height: auto;
+}
+
+.footer-bottom {
+  text-align: center;
+  color: #888;
+  font-size: 14px;
+  margin-top: 30px;
+}
+
+/* QUERY */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-column {
+    text-align: center;
+  }
+
+  .insta-gallery {
+    grid-template-columns: repeat(3, 60px);
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .insta-gallery {
+    grid-template-columns: repeat(2, 60px);
+  }
+
+  .footer-links li a {
+    display: block;
+    margin: 5px auto;
+  }
+}
+
 
 
 

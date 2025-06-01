@@ -12,6 +12,7 @@ import team1 from "./Images/team1.jpg"
 import team2 from "./Images/team2.jpg" 
 import team3 from "./Images/team3.jpg" 
 import team4 from "./Images/team4.jpg" 
+import paypal from "./Images/foot-paypal.png"
 import './index.css'
 
 let Index=()=>{
@@ -231,6 +232,70 @@ let Index=()=>{
         </form>
       </div>
     </div>
+
+       {/* ------------------------------------------------------------------------------------------------------ */}
+
+
+    {/* SEVENTH SECTION */}
+
+ <footer className="footer">
+      <div className="footer-container">
+        {/* Column 1 */}
+        <div className="footer-column">
+          <h2 className="logo">CALLA <span className="logo-icon">⟡</span></h2>
+          <p>Lorem ipsum dolor sit amet, consectetur tetur a elit. Inutark ullamcorper leo, ege euismod orci natoquepen etma.</p>
+          <div className="payment-icons">
+            <img src={paypal} alt="" />
+
+          </div>
+        </div>
+
+        {/* Column 2 */}
+        <div className="footer-column">
+          <h3>QUICK LINKS</h3>
+          <ul className="footer-links">
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">What We Do</a></li>
+            <li><a href="#">Meet The Team</a></li>
+            <li><a href="#">FAQ Page</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+
+        {/* Column 3 */}
+        <div className="footer-column">
+          <h3>FIND A STORE</h3>
+          <ul className="contact-info">
+            <li>📍 Hemlock, Brooklyn, NY 11208</li>
+            <li>📍 5 Bridge, Brooklyn, NY 11201</li>
+            <li>📞 +321856964108</li>
+          </ul>
+          <div className="social-icons">
+            <span>📷</span>
+            <span>🐦</span>
+            <span>📘</span>
+            <span>📡</span>
+          </div>
+        </div>
+
+        {/* Column 4 */}
+        <div className="footer-column">
+          <h3>INSTAGRAM</h3>
+          <div className="insta-gallery">
+            <img src="/images/insta1.jpg" alt="" />
+            <img src="/images/insta2.jpg" alt="" />
+            <img src="/images/insta3.jpg" alt="" />
+            <img src="/images/insta4.jpg" alt="" />
+            <img src="/images/insta5.jpg" alt="" />
+            <img src="/images/insta6.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+
+      <div className="footer-bottom">
+        © 2018 Qode Interactive, All Rights Reserved
+      </div>
+    </footer>
 
         </>
     )
