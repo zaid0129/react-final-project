@@ -516,24 +516,15 @@
 }
 
 .fast-delivery {
-  background-image: url('/images/bg1.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+  background: url('./Images/teamdelivery.jpg') cover no-repeat center;
 }
 
 .money-back {
-  background-image: url('/images/bg2.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+  background: url('./Images/teammoney.jpg') cover no-repeat center;
 }
 
 .secure-payment {
-  background-image: url('/images/bg3.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+  background: url('./Images/teamsecure.jpg') cover no-repeat center ;
 }
 
 .feature-card h4 {
