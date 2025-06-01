@@ -3,7 +3,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #f0f4ec;
+  background: url(./Images/LoginBack3.jpg) center no-repeat;
+  background-size: cover;
   min-height: 100vh;
   padding: 20px;
 }
@@ -48,23 +49,10 @@
 .login-form input {
   width: 100%;
   padding: 10px 15px;
-  border-radius: 25px;
+  border-radius: 20px;
   border: 1px solid #ccc;
   font-size: 14px;
   outline: none;
-}
-
-
-.password-wrapper {
-  position: relative;
-}
-
-.eye-icon {
-  position: absolute;
-  right: 15px;
-  top: 10px;
-  cursor: pointer;
-  font-size: 16px;
 }
 
 .forgot-password {
@@ -107,6 +95,8 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+  /* backdrop-filter: blur(10px); */
+
 }
 
 /* MEDIA QUERY */

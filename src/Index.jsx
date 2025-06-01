@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom"
+import './index.css'
 import  letterdecor from "./Images/LETTER DECOR.jpg"
 import greenvase from "./Images/GREEN VASE.jpg"
 import modernlamp from "./Images/MODERN LAMP.jpg"
@@ -25,7 +27,8 @@ import foot3 from "./Images/foot3.jpg.jpg"
 import foot4 from "./Images/foot4.jpg.jpg"
 import foot5 from "./Images/foot5.jpg.jpg"
 import foot6 from "./Images/foot6.jpg.jpg"
-import './index.css'
+
+
 
 let Index=()=>{
     return(
@@ -38,12 +41,12 @@ let Index=()=>{
         <div className="calla-logo">CALLA</div>
         <nav className="calla-nav">
           <ul>
-            <li>HOME</li>
-            <li>PAGES</li>
-            <li>PORTFOLIO</li>
-            <li>BLOG</li>
-            <li>SHOP</li>
-            <li>ELEMENTS</li>
+            <li> <Link> HOME</Link></li>
+            <li> <Link to='/login'>LOGIN</Link> </li>
+            <li> <Link to='/login'>PORTFOLIO</Link></li>
+            <li> <Link to='/login'> BLOG</Link></li>
+            <li> <Link to='/login'>SHOP</Link></li>
+            <li><Link to='/login'>ELEMENTS</Link></li>
           </ul>
         </nav>
       </header>
