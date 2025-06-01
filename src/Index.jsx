@@ -213,7 +213,24 @@ let Index=()=>{
       </div>
     </div>
 
+   
+   {/* ------------------------------------------------------------------------------------------------------ */}
 
+
+    {/* SIXTH SECTION */}
+
+    <div className="newsletter-section">
+      <div className="newsletter-content">
+        <div className="newsletter-text">
+          <h2>Newsletter</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <form className="newsletter-form">
+          <input type="email" placeholder="YOUR E-MAIL ADDRESS..." />
+          <button type="submit">SUBSCRIBE</button>
+        </form>
+      </div>
+    </div>
 
         </>
     )
