@@ -19,6 +19,12 @@ import { FaInstagram } from "react-icons/fa6";
 import { FaSquareXTwitter } from "react-icons/fa6";
 import { FaFacebookF } from "react-icons/fa";
 import { FaSnapchat } from "react-icons/fa";
+import foot1 from "./Images/foot1.jpg.jpg"
+import foot2 from "./Images/foot2.jpg.jpg"
+import foot3 from "./Images/foot3.jpg.jpg"
+import foot4 from "./Images/foot4.jpg.jpg"
+import foot5 from "./Images/foot5.jpg.jpg"
+import foot6 from "./Images/foot6.jpg.jpg"
 import './index.css'
 
 let Index=()=>{
@@ -287,12 +293,12 @@ let Index=()=>{
         <div className="footer-column">
           <h3>INSTAGRAM</h3>
           <div className="insta-gallery">
-            <img src="/images/insta1.jpg" alt="" />
-            <img src="/images/insta2.jpg" alt="" />
-            <img src="/images/insta3.jpg" alt="" />
-            <img src="/images/insta4.jpg" alt="" />
-            <img src="/images/insta5.jpg" alt="" />
-            <img src="/images/insta6.jpg" alt="" />
+            <img src={foot1 } alt="" />
+            <img src={foot2 } alt="" />
+            <img src={foot3 } alt="" />
+            <img src={foot4 } alt="" />
+            <img src={foot5 } alt="" />
+            <img src={foot6 }alt="" />
           </div>
         </div>
       </div>

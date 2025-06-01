@@ -744,16 +744,19 @@
 
 .insta-gallery {
   display: grid;
-  grid-template-columns: repeat(3, 60px);
+  grid-template-columns: repeat(3, 90px );
   gap: 5px;
   margin-top: 10px;
 }
 
 .insta-gallery img {
   width: 100%;
-  height: auto;
+  height: 90px;
 }
 
+.insta-gallery img:hover {
+  transform: scale(1.05);
+}
 .footer-bottom {
   text-align: center;
   color: #888;
@@ -761,7 +764,7 @@
   margin-top: 30px;
 }
 
-/* QUERY */
+/* MEDIA QUERY */
 @media (max-width: 768px) {
   .footer-container {
     flex-direction: column;
