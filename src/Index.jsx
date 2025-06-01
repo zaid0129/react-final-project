@@ -277,10 +277,10 @@ let Index=()=>{
             <li><MdAddCall /> +321856964108</li>
           </ul>
           <div className="social-icons">
-            <FaInstagram />
-            <FaSquareXTwitter />
-            <FaFacebookF />
-            <FaSnapchat />
+            <div className="social-icons-insta"><FaInstagram /></div>
+            <div className="social-icons-insta"><FaSquareXTwitter /> </div>
+           <div className="social-icons-insta"> <FaFacebookF /> </div>
+           <div className="social-icons-insta"> <FaSnapchat /> </div>
           </div>
         </div>
 

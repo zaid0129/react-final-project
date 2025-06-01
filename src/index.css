@@ -738,8 +738,11 @@
 .social-icons  {
   font-size: 18px;
   margin-right: 10px;
-  color: #aaa;
-  
+  color: #aaa; 
+}
+.social-icons-insta{
+display: flex;
+flex-direction: row;
 }
 
 .insta-gallery {
