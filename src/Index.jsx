@@ -277,13 +277,12 @@ let Index=()=>{
             <li><MdAddCall /> +321856964108</li>
           </ul>
           <div className="social-icons">
-            <div><FaInstagram /></div>
-            <div><FaSquareXTwitter /> </div>
-           <div> <FaFacebookF /> </div>
-           <div> <FaSnapchat /> </div>
+            <FaInstagram />
+            <FaSquareXTwitter /> 
+            <FaFacebookF /> 
+            <FaSnapchat /> 
           </div>
         </div>
-
         {/* Column 4 */}
         <div className="footer-column">
           <h3>INSTAGRAM</h3>
