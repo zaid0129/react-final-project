@@ -65,7 +65,7 @@
 
 
 .calla-banner {
-  background: url("./Images/img1.jpg.jpg")  center no-repeat ;
+  background: url("/src/Images/img1.jpg.jpg")  center no-repeat ;
   background-size: cover;   
   height: 100vh;
   display: flex;
@@ -426,7 +426,7 @@
 }
 
 .banner {
-  background: url('./Images/img2.jpg.jpg') no-repeat center; 
+  background: url('/src/Images/img2.jpg.jpg') no-repeat center; 
   background-size: cover;
   padding: 40px 20px;
   color: #222;
@@ -479,7 +479,7 @@
 }
 
 .team-header {
-  background: url('./Images/teaamback.jpg');
+  background: url('/src/Images/teaamback.jpg');
   padding: 40px 20px;
   color: #fff;
   position: relative;
@@ -539,17 +539,17 @@
 }
 
 .fast-delivery {
-  background: url('./Images/teamdelivery.jpg') no-repeat center;
+  background: url('/src/Images/teamdelivery.jpg') no-repeat center;
   background-size: cover;
 }
 
 .money-back {
-  background: url('./Images/teammoney.jpg') no-repeat center;
+  background: url('/src/Images/teammoney.jpg') no-repeat center;
   background-size: cover;
 }
 
 .secure-payment {
-  background: url('./Images/teamsecure.jpg') no-repeat center;
+  background: url('/src/Images/teamsecure.jpg') no-repeat center;
   background-size: cover;
 }
 
@@ -604,7 +604,7 @@
 
 
 .newsletter-section {
-  background: url('./Images/newsletterback.jpg') no-repeat center; 
+  background: url('/src/Images/newsletterback.jpg') no-repeat center; 
   background-size: cover;
   padding: 50px 20px;
   color: white;

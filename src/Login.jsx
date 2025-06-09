@@ -1,4 +1,4 @@
-import './Login.css'
+import './css/Login.css'
 import loginimg from './Images/Login.jpg'
 let Login =()=>{
     return(
@@ -9,7 +9,7 @@ let Login =()=>{
         <div className="login-form">
           <h2>Log In To Your Account</h2>
           <p>Check your order status, update your billing info, and review past purchases.</p>
-
+        
           <label>* Email *</label>
           <input type="email" placeholder="Enter Your Email" />
 
@@ -23,7 +23,7 @@ let Login =()=>{
           <button className="login-button">LOG IN</button>
 
           <p className="signup-text">
-            Don't have an account? <a href="#">Sign Up</a>
+            Don't have an account? <a href="/signuppage">Sign Up</a>
           </p>
         </div>
         <div className="login-image">

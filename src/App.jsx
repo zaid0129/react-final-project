@@ -2,6 +2,8 @@ import { Route, Routes } from 'react-router-dom'
 import './App.css'
 import Index from './Index'
 import Login from './Login'
+import SignupPage from './SignupPage'
+
 
 
 
@@ -12,6 +14,7 @@ function App() {
 <Routes>
 <Route index element={<Index/>}/>
 <Route path='/login' element={<Login/>}/>
+<Route path='/signuppage' element={<SignupPage/>}/>
 
 </Routes>
 

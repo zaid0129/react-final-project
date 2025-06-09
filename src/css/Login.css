@@ -3,7 +3,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: url(./Images/LoginBack3.jpg) center no-repeat;
+  background: url(/src/Images/LoginBack3.jpg) center no-repeat;
   background-size: cover;
   min-height: 100vh;
   padding: 20px;

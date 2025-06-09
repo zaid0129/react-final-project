@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom"
-import './index.css'
+import './css/Index.css'
 import  letterdecor from "./Images/LETTER DECOR.jpg"
 import greenvase from "./Images/GREEN VASE.jpg"
 import modernlamp from "./Images/MODERN LAMP.jpg"
@@ -43,7 +43,7 @@ let Index=()=>{
           <ul>
             <li> <Link> HOME</Link></li>
             <li> <Link to='/login'>LOGIN</Link> </li>
-            <li> <Link to='/login'>PORTFOLIO</Link></li>
+            <li> <Link to='/SignupPage'>SignUp</Link></li>
             <li> <Link to='/login'> BLOG</Link></li>
             <li> <Link to='/login'>SHOP</Link></li>
             <li><Link to='/login'>ELEMENTS</Link></li>
