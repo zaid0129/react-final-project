@@ -1,21 +1,46 @@
+import { useState } from 'react'
 import './css/Login.css'
 import loginimg from './Images/Login.jpg'
+
 let Login =()=>{
+
+       let [logindata,setlogindata]= useState({
+            email:"",password:""
+    })
+
+    function fun(e){
+        let {name,value}=e.target;
+        setlogindata({...logindata,[name]:value})
+    }
+
+    let storedata =JSON.parse(localStorage.getItem("userdata"))
+
+    function finalSubmit(e){
+        e.preventDefault()
+        if((logindata.email != storedata.email )|| (logindata.password !=storedata.password)){
+            alert("user not found ");
+        }else{
+            alert("login successfully");
+        }
+
+    }
+
+
     return(
         <>
         
         <div className="login-wrapper">
       <div className="login-box">
-        <div className="login-form">
+        <form className="login-form" onSubmit={finalSubmit}>
           <h2>Log In To Your Account</h2>
           <p>Check your order status, update your billing info, and review past purchases.</p>
         
           <label>* Email *</label>
-          <input type="email" placeholder="Enter Your Email" />
+          <input type="email" onChange={fun} placeholder="Enter Your Email" />
 
           <label>* Password *</label>
           <div className="password">
-            <input type="password" placeholder="Enter Your Password" />
+            <input type="password" onChange={fun} placeholder="Enter Your Password" />
           </div>
 
           <a href="#" className="forgot-password">Forgot Password?</a>
@@ -25,7 +50,7 @@ let Login =()=>{
           <p className="signup-text">
             Don't have an account? <a href="/signuppage">Sign Up</a>
           </p>
-        </div>
+        </form>
         <div className="login-image">
           <img src={loginimg} alt="Decor" />
         </div>
