@@ -8,7 +8,7 @@ let CardSlice = createSlice({
         carditems:[]
     },
     reducers: {
-        additeme: ( state,action)=>{
+        additem: ( state,action)=>{
             state.carditems.push(action.payload)
         } ,
          removeFromCart: (state, action) => {
@@ -18,4 +18,4 @@ let CardSlice = createSlice({
 })
 
 export default CardSlice.reducer
-export const {additeme,removeFromCart}=CardSlice.actions
+export const {additem,removeFromCart}=CardSlice.actions

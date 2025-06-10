@@ -173,7 +173,7 @@ let Index = () => {
 
   <Row className="gap-4 justify-content-center">
     {newArrivals.map((item) => (
-      <Card key={item.id} style={{ width: '19rem', height: '28rem', border: "solid 5px pink" }}>
+      <Card key={item.id} style={{ width: '300px', height: '420px', }}>
         <Card.Body>
           <div style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
             <img
@@ -186,15 +186,15 @@ let Index = () => {
           </div>
           <Card.Title>{item.pname}</Card.Title>
           <Card.Text>
-            <p><b>RS: {item.price}</b></p>
+            <p style={{fontFamily: "Georgia"}}>RS: {item.price}</p>
           </Card.Text>
           <div style={{ display: "flex", justifyContent: "flex-end", marginTop: "10px" }}>
             <Button
               variant="primary"
-              style={{ backgroundColor: "pink", border: "none" }}
+              style={{ backgroundColor: "lightgrey", border: "none", alignItems: "center" }}
               onClick={() => handleAddToCart(item)}
             >
-              <h6 style={{ color: "black", fontFamily: "cursive", margin: 0 }}>Add to cart</h6>
+              <h6 style={{ color: "black", fontFamily: "Georgia" , margin: 0,  }}>Add to cart</h6>
             </Button>
           </div>
         </Card.Body>

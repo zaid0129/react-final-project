@@ -5,6 +5,9 @@ import App from './App.jsx'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import 'bootstrap/dist/js/bootstrap.js'
 import { BrowserRouter } from 'react-router-dom'
+import { Provider } from 'react-redux'
+import Appstore from './Appstore.jsx'
+
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
