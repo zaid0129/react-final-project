@@ -21,7 +21,7 @@ let   SignupPage=()=> {
        e.preventDefault()
        console.log(inputdata)
        localStorage.setItem("userdata",JSON.stringify(inputdata))
-      navigate("login");
+      navigate("/login");
     }
 
 
