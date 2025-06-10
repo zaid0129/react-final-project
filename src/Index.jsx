@@ -1,5 +1,10 @@
-import Card from 'react-bootstrap/Card';
+import { useDispatch, useSelector } from "react-redux";
+import { additem } from "./Cardslice";
+import Cardslice from "./Cardslice"
+import { useNavigate } from "react-router-dom";
 import Button from 'react-bootstrap/Button';
+import Card from 'react-bootstrap/Card';
+import { Row } from 'react-bootstrap';
 import { Link } from "react-router-dom"
 import './css/Index.css'
 import  letterdecor from "./Images/LETTER DECOR.jpg"
@@ -32,7 +37,48 @@ import foot6 from "./Images/foot6.jpg.jpg"
 
 
 
-let Index=()=>{
+let Index = () => {
+    const dispatch = useDispatch();
+    const navigate = useNavigate();
+    const cartItems = useSelector((store) => store.cart.carditems);
+
+    const newArrivals = [
+      {
+        id: 1,
+        pname: "LETTER DECOR",
+        price: 50000,
+        img: letterdecor,
+      },
+      {
+        id: 2,
+        pname: "MODERN VASE",
+        price: 75000,
+        img: greenvase,
+      },
+      {
+        id: 3,
+        pname: "MODERN LAMP",
+        price: 90000,
+        img: modernlamp,
+      },
+      {
+        id: 4,
+        pname: "CLASSIC CANDLE",
+        price: 40000,
+        img: classiccandle,
+      },
+      {
+        id: 5,
+        pname: "CANDLE",
+        price: 45000,
+        img: candle,
+      },
+    ];
+
+    const handleAddToCart = (item) => {
+      dispatch(additem(item));
+   };
+
     return(
         <>
 
@@ -111,69 +157,55 @@ let Index=()=>{
       </div>
     </div> */}
 
-
-  {/* SECOND SECTION with Bootstrap Cards */}
+{/* SECOND SECTION */}
 <div className="new-arrivals">
   <div className="section-title">
     <p>Home Decor</p>
-    <h2>NEW ARRIVALS</h2>
+    <h2>NEW ARRIVALS - Cart ({cartItems.length})</h2>
     <div className="divider"></div>
   </div>
 
-  <div className="products d-flex flex-wrap justify-content-center gap-4">
-    <Card style={{ width: '18rem' }}>
-      <Card.Img variant="top" src={letterdecor} />
-      <Card.Body>
-        <Card.Title>LETTER DECOR</Card.Title>
-        <Card.Text>Rs.50K</Card.Text>
-        <Button variant="primary">Buy Now</Button>
-      </Card.Body>
-    </Card>
+  <div style={{ textAlign: "center", marginBottom: "20px" }}>
+    <Button variant="dark" onClick={() => navigate("/Showcart")}>
+      Go to Cart
+    </Button>
+  </div>
 
-    <Card style={{ width: '18rem' }}>
-      <Card.Img variant="top" src={greenvase} />
-      <Card.Body>
-        <Card.Title>MODERN VASE</Card.Title>
-        <Card.Text>Rs.75K</Card.Text>
-        <Button variant="primary">Buy Now</Button>
-      </Card.Body>
-    </Card>
-
-    <Card style={{ width: '18rem' }}>
-      <Card.Img variant="top" src={modernlamp} />
-      <Card.Body>
-        <Card.Title>MODERN LAMP</Card.Title>
-        <Card.Text>Rs.90K</Card.Text>
-        <Button variant="primary">Buy Now</Button>
-      </Card.Body>
-    </Card>
-
-    <Card style={{ width: '18rem' }}>
-      <Card.Img variant="top" src={classiccandle} />
-      <Card.Body>
-        <Card.Title>CLASSIC CANDLE</Card.Title>
-        <Card.Text>Rs.40K</Card.Text>
-        <Button variant="primary">Buy Now</Button>
-      </Card.Body>
-    </Card>
-
-    <Card style={{ width: '18rem' }}>
-      <Card.Img variant="top" src={candle} />
-      <Card.Body>
-        <Card.Title>CANDLE</Card.Title>
-        <Card.Text>Rs.45K</Card.Text>
-        <Button variant="primary">Buy Now</Button>
-      </Card.Body>
-    </Card>
- </div>
+  <Row className="gap-4 justify-content-center">
+    {newArrivals.map((item) => (
+      <Card key={item.id} style={{ width: '19rem', height: '28rem', border: "solid 5px pink" }}>
+        <Card.Body>
+          <div style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
+            <img
+              src={item.img}
+              alt=""
+              height="250px"
+              width="250px"
+              style={{ objectFit: "cover" }}
+            />
+          </div>
+          <Card.Title>{item.pname}</Card.Title>
+          <Card.Text>
+            <p><b>RS: {item.price}</b></p>
+          </Card.Text>
+          <div style={{ display: "flex", justifyContent: "flex-end", marginTop: "10px" }}>
+            <Button
+              variant="primary"
+              style={{ backgroundColor: "pink", border: "none" }}
+              onClick={() => handleAddToCart(item)}
+            >
+              <h6 style={{ color: "black", fontFamily: "cursive", margin: 0 }}>Add to cart</h6>
+            </Button>
+          </div>
+        </Card.Body>
+      </Card>
+    ))}
+  </Row>
 </div>
 
 
 
-
-
-
-    {/* ------------------------------------------------------------------------------------------------------ */}
+{/* ------------------------------------------------------------------------------------------------------ */}
 
 
     {/* THIRD SECTION */}
