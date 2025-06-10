@@ -1,3 +1,5 @@
+import Card from 'react-bootstrap/Card';
+import Button from 'react-bootstrap/Button';
 import { Link } from "react-router-dom"
 import './css/Index.css'
 import  letterdecor from "./Images/LETTER DECOR.jpg"
@@ -69,7 +71,7 @@ let Index=()=>{
 {/* SECOND SECTION */}
 
 
- <div className="new-arrivals">
+ {/* <div className="new-arrivals">
       <div className="section-title">
         <p>Home Decor</p>
         <h2>NEW ARRIVALS</h2>
@@ -107,7 +109,69 @@ let Index=()=>{
           <p>Rs.45K</p>
         </div>
       </div>
-    </div>
+    </div> */}
+
+
+  {/* SECOND SECTION with Bootstrap Cards */}
+<div className="new-arrivals">
+  <div className="section-title">
+    <p>Home Decor</p>
+    <h2>NEW ARRIVALS</h2>
+    <div className="divider"></div>
+  </div>
+
+  <div className="products d-flex flex-wrap justify-content-center gap-4">
+    <Card style={{ width: '18rem' }}>
+      <Card.Img variant="top" src={letterdecor} />
+      <Card.Body>
+        <Card.Title>LETTER DECOR</Card.Title>
+        <Card.Text>Rs.50K</Card.Text>
+        <Button variant="primary">Buy Now</Button>
+      </Card.Body>
+    </Card>
+
+    <Card style={{ width: '18rem' }}>
+      <Card.Img variant="top" src={greenvase} />
+      <Card.Body>
+        <Card.Title>MODERN VASE</Card.Title>
+        <Card.Text>Rs.75K</Card.Text>
+        <Button variant="primary">Buy Now</Button>
+      </Card.Body>
+    </Card>
+
+    <Card style={{ width: '18rem' }}>
+      <Card.Img variant="top" src={modernlamp} />
+      <Card.Body>
+        <Card.Title>MODERN LAMP</Card.Title>
+        <Card.Text>Rs.90K</Card.Text>
+        <Button variant="primary">Buy Now</Button>
+      </Card.Body>
+    </Card>
+
+    <Card style={{ width: '18rem' }}>
+      <Card.Img variant="top" src={classiccandle} />
+      <Card.Body>
+        <Card.Title>CLASSIC CANDLE</Card.Title>
+        <Card.Text>Rs.40K</Card.Text>
+        <Button variant="primary">Buy Now</Button>
+      </Card.Body>
+    </Card>
+
+    <Card style={{ width: '18rem' }}>
+      <Card.Img variant="top" src={candle} />
+      <Card.Body>
+        <Card.Title>CANDLE</Card.Title>
+        <Card.Text>Rs.45K</Card.Text>
+        <Button variant="primary">Buy Now</Button>
+      </Card.Body>
+    </Card>
+  </div>
+</div>
+
+
+
+
+
 
     {/* ------------------------------------------------------------------------------------------------------ */}
 
