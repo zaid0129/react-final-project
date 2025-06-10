@@ -42,8 +42,9 @@ let   SignupPage=()=> {
           <input type="text" name='mobileno' placeholder="Mobile No" onChange={fun}/>
           <input type="email" name='email' placeholder="Email"onChange={fun} />
           <input type="password" name='password' placeholder="Password" onChange={fun} />
+          
 
-        <button className="submit-btn" type="submit">Create an Account</button>
+        <input className="submit-btn" type="submit" />
           <button className="google-btn" type="button">Sign up with Google</button>
         </form>
       </div>

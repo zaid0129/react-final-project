@@ -44,9 +44,9 @@ let Index=()=>{
             <li> <Link> HOME</Link></li>
             <li> <Link to='/login'>LOGIN</Link> </li>
             <li> <Link to='/SignupPage'>SignUp</Link></li>
-            <li> <Link to='/login'> BLOG</Link></li>
-            <li> <Link to='/login'>SHOP</Link></li>
-            <li><Link to='/login'>ELEMENTS</Link></li>
+            <li> <Link to='/'> BLOG</Link></li>
+            <li> <Link to='/'>SHOP</Link></li>
+            <li><Link to='/'>ELEMENTS</Link></li>
           </ul>
         </nav>
       </header>
