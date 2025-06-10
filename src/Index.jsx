@@ -165,7 +165,7 @@ let Index=()=>{
         <Button variant="primary">Buy Now</Button>
       </Card.Body>
     </Card>
-  </div>
+ </div>
 </div>
 
 
