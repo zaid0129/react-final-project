@@ -4,7 +4,7 @@ import Cardslice from "./Cardslice"
 import { useNavigate } from "react-router-dom";
 import Button from 'react-bootstrap/Button';
 import { Link } from "react-router-dom"
-import './css/Index.css'
+import './css/index.css'
 import  letterdecor from "./Images/LETTER DECOR.jpg"
 import greenvase from "./Images/GREEN VASE.jpg"
 import modernlamp from "./Images/MODERN LAMP.jpg"
