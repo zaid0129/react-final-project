@@ -250,7 +250,7 @@ let Index = () => {
     {/* THIRD SECTION */}
 
       
-    <div data-aos="fade-down" className="section-3">
+    <div className="section-3">
       <div className="main-image" >
         <img src={sec3img1} alt="" />
       </div>
