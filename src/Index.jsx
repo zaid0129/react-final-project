@@ -89,7 +89,7 @@ let Index = () => {
         <div className="calla-logo">CALLA</div>
         <nav className="calla-nav">
           <ul>
-            <li> <Link> HOME</Link></li>
+            <li> <Link to='/'> HOME</Link></li>
             <li> <Link to='/login'>LOGIN</Link> </li>
             <li> <Link to='/SignupPage'>SignUp</Link></li>
             <li> <Link to='/'> BLOG</Link></li>
@@ -130,8 +130,6 @@ let Index = () => {
              Go to Cart
          </Button>
         </div>
-    
-      
 
       <div className="products">
                {

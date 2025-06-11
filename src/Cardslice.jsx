@@ -13,9 +13,12 @@ let CardSlice = createSlice({
         } ,
          removeFromCart: (state, action) => {
         state.carditems = state.carditems.filter(item => item.id !== action.payload);
-    },   
+    }, 
+    clearCart: (state) => {
+      state.carditems = [];
+    },  
     }
 })
 
 export default CardSlice.reducer
-export const {additem,removeFromCart}=CardSlice.actions
+export const {additem,removeFromCart,clearCart}=CardSlice.actions
