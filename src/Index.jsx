@@ -117,48 +117,43 @@ let Index = () => {
 {/* SECOND SECTION */}
 
 
- {/* <div className="new-arrivals">
-      <div className="section-title">
+  <div className="new-arrivals">
+    <div className="section-title">
         <p>Home Decor</p>
-        <h2>NEW ARRIVALS</h2>
+        <h2>NEW ARRIVALS </h2>
+        <h2> Your-Cart ({cartItems.length}) </h2>
         <div className="divider"></div>
-      </div>
+         </div>
+
+        <div className="cart-button-container">
+         <Button onClick={() => navigate("/Showcart")}>
+             Go to Cart
+         </Button>
+        </div>
+    
+      
 
       <div className="products">
-        <div className="product">
-          <img src={letterdecor} alt="" />
-          <h3>LETTER DECOR</h3>
-          <p>Rs.50K</p>
+               {
+      newArrivals.map((e)=>(
+        <>
+          <div className="product">
+          <img src={e.img} alt="" />
+          <h3>{e.pname}</h3>
+          <p>Rs.{e.price}</p>
+          <button onClick={()=>handleAddToCart(e)}> Add to Cart</button>
         </div>
+        </>
+      ))
+    }
+        
 
-        <div className="product">
-          <img src={greenvase} alt="" />
-          <h3>MODERN VASE</h3>
-          <p>Rs.75K</p>
-        </div>
-
-        <div className="product">
-          <img src={modernlamp} alt="" />
-          <h3>MODERN LAMP</h3>
-          <p>Rs.90K</p>
-        </div>
-
-        <div className="product">
-          <img src={classiccandle} alt="" />
-          <h3>CLASSIC CANDLE</h3>
-          <p>Rs.40K</p>
-        </div>
-
-        <div className="product">
-          <img src={candle} alt="" />
-          <h3>CANDLE</h3>
-          <p>Rs.45K</p>
-        </div>
+        
       </div>
-    </div> */}
+    </div> 
 
-{/* SECOND SECTION */}
-<div className="new-arrivals">
+
+{/* <div className="new-arrivals">
   <div className="section-title">
     <p>Home Decor</p>
     <h2>NEW ARRIVALS - Cart ({cartItems.length})</h2>
@@ -201,7 +196,53 @@ let Index = () => {
       </Card>
     ))}
   </Row>
-</div>
+</div> */}
+
+
+{/* ------------------------ */}
+
+{/* <div className="new-arrivals">
+  <div className="title-section">
+    <p className="subtitle">Home Decor</p>
+    <h2 className="title">NEW ARRIVALS - Cart ({cartItems.length})</h2>
+    <div className="divider" />
+  </div>
+
+  <div className="cart-button-container">
+    <Button variant="dark" onClick={() => navigate("/Showcart")}>
+      Go to Cart
+    </Button>
+  </div>
+
+  <Row className="product-list">
+    {newArrivals.map((item) => (
+      <Card key={item.id} className="product-card">
+        <Card.Body>
+          <div className="image-container">
+            <img
+              src={item.img}
+              alt={item.pname}
+              className="product-image"
+            />
+          </div>
+          <Card.Title className="product-name">{item.pname}</Card.Title>
+          <Card.Text className="product-price">RS: {item.price}</Card.Text>
+          <div className="add-button-container">
+            <Button
+              className="add-button"
+              onClick={() => handleAddToCart(item)}
+            >
+              <h6 className="add-button-text">Add to cart</h6>
+            </Button>
+          </div>
+        </Card.Body>
+      </Card>
+    ))}
+  </Row>
+</div> */}
+
+
+
 
 {/* ------------------------------------------------------------------------------------------------------ */}
 
@@ -209,8 +250,8 @@ let Index = () => {
     {/* THIRD SECTION */}
 
       
-    <div className="section-3">
-      <div className="main-image">
+    <div data-aos="fade-down" className="section-3">
+      <div className="main-image" >
         <img src={sec3img1} alt="" />
       </div>
 

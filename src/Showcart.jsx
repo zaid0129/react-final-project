@@ -77,7 +77,7 @@ const Showcart = () => {
   {cartItems.length > 0 && (
     <div className="cart-summary">
       <h4>Total Price: Rs. {totalPrice}</h4>
-      <Button variant="success">Proceed to Checkout</Button>
+      <Button >Proceed to Checkout</Button>
     </div>
   )}
 </div>

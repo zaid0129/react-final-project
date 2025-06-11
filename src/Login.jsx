@@ -1,8 +1,11 @@
 import { useState } from 'react'
 import './css/Login.css'
 import loginimg from './Images/Login.jpg'
+import { useNavigate } from 'react-router-dom'
 
 let Login =()=>{
+
+  let navigate = useNavigate()
 
        let [logindata,setlogindata]= useState({
             email:"",password:""
@@ -21,7 +24,10 @@ let Login =()=>{
             alert("user not found ");
         }else{
             alert("login successfully");
+            navigate('/')
+            
         }
+        
 
     }
 
@@ -36,11 +42,11 @@ let Login =()=>{
           <p>Check your order status, update your billing info, and review past purchases.</p>
         
           <label>* Email *</label>
-          <input type="email" onChange={fun} placeholder="Enter Your Email" />
+          <input type="email" name='email' onChange={fun} placeholder="Enter Your Email" />
 
           <label>* Password *</label>
           <div className="password">
-            <input type="password" onChange={fun} placeholder="Enter Your Password" />
+            <input type="password" name='password' onChange={fun} placeholder="Enter Your Password" />
           </div>
 
           <a href="#" className="forgot-password">Forgot Password?</a>
